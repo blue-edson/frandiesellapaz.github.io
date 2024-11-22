@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasarela de Pagos - Fran Diesel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Color suave para fondo */
+        }
+        .payment-card {
+            background-color: #eae2b7;
+            border: 1px solid #003C5D;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: #d62828;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #f77f00;
+        }
+        .custom-input {
+            border: 2px solid #003C5D;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="payment-card">
+                    <h3 class="text-center mb-4">Pasarela de Pagos</h3>
+                    <form>
+                        <!-- Nombre del titular -->
+                        <div class="mb-3">
+                            <label for="cardholderName" class="form-label">Nombre del Titular</label>
+                            <input type="text" class="form-control custom-input" id="cardholderName" placeholder="Ejemplo: Juan Pérez" required>
+                        </div>
+                        <!-- Número de tarjeta -->
+                        <div class="mb-3">
+                            <label for="cardNumber" class="form-label">Número de Tarjeta</label>
+                            <input type="text" class="form-control custom-input" id="cardNumber" placeholder="0000 0000 0000 0000" maxlength="16" required>
+                        </div>
+                        <!-- Fecha de expiración y CVV -->
+                        <div class="row">
+                            <div class="col-6 mb-3">
+                                <label for="expiryDate" class="form-label">Fecha de Expiración</label>
+                                <input type="text" class="form-control custom-input" id="expiryDate" placeholder="MM/AA" maxlength="5" required>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <label for="cvv" class="form-label">CVV</label>
+                                <input type="text" class="form-control custom-input" id="cvv" placeholder="123" maxlength="3" required>
+                            </div>
+                        </div>
+                        <!-- Monto a pagar -->
+                        <div class="mb-3">
+                            <label for="amount" class="form-label">Monto a Pagar</label>
+                            <input type="number" class="form-control custom-input" id="amount" placeholder="Ejemplo: 100.00" required>
+                        </div>
+                        <!-- Botón de pago -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Pagar Ahora</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

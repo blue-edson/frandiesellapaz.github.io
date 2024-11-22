@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fran Diesel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/">
+    <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+    
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+    
+        swiper-container {
+          width: 100%;
+          height: 100%;
+        }
+    
+        swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    
+        swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container">
+            <!-- Botón Responsive -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="row w-100 align-items-center">
+                    <!-- Logo -->
+                    <div class="col-lg-2 order-lg-1 text-lg-start text-center mb-3 mb-lg-0">
+                        <a class="navbar-brand" href="./Home.html">
+                            <img src="./imagenes/logo fran diesel.png" alt="Fran Diesel Logo" width="120">
+                        </a>
+                    </div>
+
+                    <!-- Botones del menú -->
+                    <div class="col-lg-9 order-lg-2 d-flex justify-content-lg-end justify-content-center flex-wrap gap-2">
+                        <a class="btn btn-custom col-lg-2 col-6" href="./marcas.html">Marcas</a>
+                        <a class="btn btn-custom col-lg-2 col-6" href="./repuestos.html">Productos</a>
+                        <a class="btn btn-custom col-lg-2 col-6" href="./soporte.html">Soporte</a>
+                        <a class="btn btn-custom col-lg-2 col-6" href="./mi_cuenta.html">Mi cuenta</a>
+                    </div>
+
+                    <!-- Ícono del carrito -->
+                    <div class="col-lg-1 order-lg-3 text-lg-end text-center mt-3 mt-lg-0">
+                        <a class="nav-link" href="./carrito.html">
+                            <img src="./imagenes/iconos/carrito.svg" alt="Carrito" width="40">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Header Section -->
+    <!-- <header class="bg-light text-center py-5"> -->
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+        centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+        <swiper-slide><img src="./imagenes/slider/modern-automobile-mechanic-composition.jpg"></swiper-slide>
+        <swiper-slide><img src="./imagenes/slider/image 13.png"></swiper-slide>
+        <swiper-slide><img src="./imagenes/slider/top-view-woman-repairing-car.jpg"></swiper-slide>
+      </swiper-container>
+        <!-- <div class="container">
+            <h1 class="display-4">"Repuestos Premium, Precios Imbatibles"</h1>
+            <p class="lead"></p>
+            <img src="header-image.jpg" alt="Header Image" class="img-fluid rounded">
+           
+        </div> -->
+    </header>
+    <!-- Seccion Nosotros -->
+    <!-- <section class="bg-white py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nosotros</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="./imagenes/imagen nosotros.svg" alt="Nosotros Image" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <p>En Fran Diesel, nos especializamos en repuestos automotrices de alta calidad, ofreciendo un extenso inventario de piezas para camiones, motocicletas, y automóviles. Nuestro equipo está comprometido en brindar el mejor servicio al cliente, asegurando que nuestros clientes siempre reciban el producto adecuado para sus necesidades.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section class="bg-white py-5 section-nosotros">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <!-- Imagen -->
+                <div class="col-12 col-lg-7 animate-on-scroll fadeInLeft">
+                    <img src="./imagenes/image.svg" alt="Nosotros Image" class="img-fluid w-100">
+                </div>
+                <!-- Texto -->
+                <div class="col-12 col-lg-4 offset-lg-1 animate-on-scroll fadeInRight">
+                    <h2 class="text-center mb-4">Nosotros</h2>
+                    <p>
+                        En Fran Diesel, nos especializamos en repuestos automotrices de alta calidad, ofreciendo un extenso inventario de piezas para camiones, motocicletas, y automóviles. Nuestro equipo está comprometido en brindar el mejor servicio al cliente, asegurando que nuestros clientes siempre reciban el producto adecuado para sus necesidades.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Secciòn tipo -->
+    <section class="services-section py-5">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <!-- Camioneta -->
+                <div class="col-12 col-md-4 text-center animate-on-scroll fadeInUp">
+                    <div class="service-box p-4 rounded">
+                        <img src="./imagenes/camioneta.svg" alt="Camioneta" class="img-fluid mb-3">
+                        <h3>Camioneta</h3>
+                    </div>
+                </div>
+                <!-- Motocicleta -->
+                <div class="col-12 col-md-4 text-center animate-on-scroll fadeInUp">
+                    <div class="service-box p-4 rounded">
+                        <img src="./imagenes/moto.svg" alt="Motocicleta" class="img-fluid mb-3">
+                        <h3>Motocicleta</h3>
+                    </div>
+                </div>
+                <!-- Automóvil -->
+                <div class="col-12 col-md-4 text-center animate-on-scroll fadeInUp">
+                    <div class="service-box p-4 rounded">
+                        <img src="./imagenes/autos.svg" alt="Automóvil" class="img-fluid mb-3">
+                        <h3>Automóvil</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Formulario de contacto -->
+    <section class="bg-white py-5 contact-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <!-- Formulario -->
+                <div class="col-12 col-md-6">
+                    <form action="#">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contact" class="form-label">Número de Contacto</label>
+                            <input type="text" class="form-control" id="contact" placeholder="Número de contacto" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="comments" class="form-label">Comentarios</label>
+                            <textarea class="form-control" id="comments" rows="4" placeholder="Escribe tus comentarios aquí..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                    </form>
+                </div>
+                <!-- Mapa -->
+                <div class="col-12 col-md-6">
+                    <div class="map text-center">
+                        <h3 class="mb-4">Dirección</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1352.4460661636297!2d-68.16525368538845!3d-16.51119111922021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edf98d6adfd1f%3A0xdddf18dcdba26200!2sJorge%20Carrasco%2C%20El%20Alto!5e0!3m2!1ses!2sbo!4v1728905946723!5m2!1ses!2sbo" 
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Footer -->
+<footer class="bg- text-white py-4">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Sección de Links -->
+            <div class="col-12 col-md-2 mb-4">
+                <div class="footer-section">
+                    <h4 class="text-uppercase text-warning">Empresa</h4>
+                    <a href="./Home.html" class="d-block text-light">Home</a>
+                    <a href="./marcas.html" class="d-block text-light">Marcas</a>
+                    <a href="./repuestos.html" class="d-block text-light">Repuestos</a>
+                    <a href="./soporte.html" class="d-block text-light">Soporte</a>
+                    <a href="./mi_cuenta.html" class="d-block text-light">Mi cuenta</a>
+                    <a href="./carrito.html" class="d-block text-light">Carrito</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-2 mb-4">
+                <div class="footer-section">
+                    <h4 class="text-uppercase text-warning">Ayuda</h4>
+                    <a href="#" class="d-block text-light">Quiénes somos</a>
+                    <a href="#" class="d-block text-light">Preguntas frecuentes</a>
+                    <a href="#" class="d-block text-light">Política de cambios</a>
+                    <a href="#" class="d-block text-light">Guía de compra</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-2 mb-4">
+                <div class="footer-section">
+                    <h4 class="text-uppercase text-warning">Dirección</h4>
+                    <p class="mb-0">El Alto, Av. Jorge Carrasco</p>
+                    <p>Calle N°223</p>
+                </div>
+            </div>
+
+            <!-- Logo y Redes Sociales -->
+            <div class="col-12 col-md-5 text-center">
+                <div class="footer-logo mb-3">
+                    <a href="./Home.html">
+                        <img src="./imagenes/Frame.svg" alt="Fran Diesel Logo" height="100">
+                    </a>
+                </div>
+                <div class="footer-social d-flex justify-content-center gap-3">
+                    <a href="#" class="text-light">
+                        <img src="./imagenes/face.svg" alt="Facebook" width="15">
+                    </a>
+                    <a href="#" class="text-light">
+                        <img src="./imagenes/what.svg" alt="WhatsApp" width="25">
+                    </a>
+                    <a href="#" class="text-light">
+                        <img src="./imagenes/tik.svg" alt="TikTok" width="20">
+                    </a>
+                    <a href="#" class="text-light">
+                        <img src="./imagenes/insta.svg" alt="Instagram" width="22">
+                    </a>
+                    <a href="#" class="text-light">
+                        <img src="./imagenes/x.svg" alt="X (Twitter)" width="22">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección Legal -->
+        <div class="footer-legal text-center mt-4">
+            <p>© 2024 Fran Diesel. Todos los derechos reservados.</p>
+            <p>
+                Queda prohibida la reproducción total o parcial de este sitio web, incluyendo textos, imágenes, y otros contenidos, sin la previa autorización por escrito de Fran Diesel. Todas las marcas, nombres comerciales y logotipos son propiedad de sus respectivos titulares. Fran Diesel no se hace responsable del uso indebido de la información aquí proporcionada.
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+        // Función para detectar cuándo un elemento entra en la vista
+        function handleScrollAnimation() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            elements.forEach(element => {
+                const rect = element.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                if (isVisible) {
+                    element.classList.add('in-view');
+                }
+            });
+        }
+    
+        // Escuchar eventos de scroll
+        window.addEventListener('scroll', handleScrollAnimation);
+        // Ejecutar la función una vez al cargar
+        document.addEventListener('DOMContentLoaded', handleScrollAnimation);
+    </script>
+    <script>
+        // Detectar elementos en la vista
+        function handleScrollAnimation() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            elements.forEach(element => {
+                const rect = element.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                if (isVisible) {
+                    element.classList.add('in-view');
+                }
+            });
+        }
+    
+        // Escuchar scroll y cargar inicial
+        window.addEventListener('scroll', handleScrollAnimation);
+        document.addEventListener('DOMContentLoaded', handleScrollAnimation);
+    </script>
+    
+</body>
+</html>
